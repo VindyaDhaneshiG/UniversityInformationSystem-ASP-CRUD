@@ -1,0 +1,39 @@
+Microsoft.AspNet.WebApi.Cors
+
+ng g c employee
+ng g c employee/employee-list
+ng g s shared/employee
+ng g cl shared/employee --type=model
+///////////
+<div class="jumbtron">
+<h1 class="display-4 text-center">
+  Employee Register
+</h1>
+<hr>
+
+<div class="row">
+  <div class="col-md-5">
+     <app-employee>
+
+     </app-employee>
+
+  </div>
+  <div class="col-md-7">
+   <app-employee-list>
+
+   </app-employee-list>
+  </div>
+
+</div>
+</div>
+////////////////
+install ngx toster use below command
+npm install ngx-toastr --save
+to install angular animations use below command
+npm install @angular/animations --save
+//
+step 2: add ToastrModule to app NgModule, make sure you have BrowserAnimationsModule as well
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+ 
+import { ToastrModule } from 'ngx-toastr';
